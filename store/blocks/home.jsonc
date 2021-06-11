@@ -1,0 +1,67 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text#titulo",
+      "rich-text#subtitulo",
+      "slider-layout#home"
+    ]
+  },
+  "rich-text#titulo": { 
+    "props": { 
+      "text": "LemonStore te da la bienvenida",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "margin": "5px",
+      "font": "t-heading-1"
+    }
+  },
+  "rich-text#subtitulo": { 
+    "props": { 
+      "text": "Tu vida amarilla y fresca",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "margin": "500",
+      "font": "t-heading-3"
+    }
+  },
+  "slider-layout#home": {
+    "children": ["info-card#1", "info-card#2"],
+    "props": {
+      "itemsPerPage":{
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  "info-card#1": {
+    "props": {
+      "imageUrl": "https://lemonstore.vteximg.com.br/arquivos/ids/155412-1000-1000/La%CC%81mpara4.jpg?v=637509262274200000",
+      "isFullModeStyle": false,
+      "headline": "Todo para tu casa",
+      "callToActionText": "Comprar",
+      "callToActionURL": "/guirnaldalimonentero/p",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#2": {
+    "props": {
+      "imageUrl": "https://lemonstore.vteximg.com.br/arquivos/ids/155436-1000-1000/Polera2.jpg?v=637509792400570000",
+      "isFullModeStyle": false,
+      "headline": "Todo para ti",
+      "callToActionText": "Comprar",
+      "callToActionURL": "/polerajapon/p",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  }
+}
